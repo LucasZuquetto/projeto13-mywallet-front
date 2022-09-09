@@ -1,9 +1,9 @@
-import IdentificationStyle from "./styled-components/IdentificationStyle";
+import AuthStyle from "./styled-components/AuthStyle";
 import { Link } from "react-router-dom";
 
 export default function Register() {
    return (
-      <IdentificationStyle>
+      <AuthStyle>
          <h1>MyWallet</h1>
          <form>
             <input type="text" placeholder="Nome" />
@@ -15,6 +15,6 @@ export default function Register() {
          <Link to="/login">
             <span>Já tem uma conta? Entre agora!</span>
          </Link>
-      </IdentificationStyle>
+      </AuthStyle>
    );
 }

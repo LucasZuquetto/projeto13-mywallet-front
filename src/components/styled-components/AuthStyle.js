@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const IdentificationStyle = styled.div`
+const AuthStyle = styled.div`
    width: 100vw;
    height: 100vh;
    display: flex;
@@ -60,4 +60,4 @@ const IdentificationStyle = styled.div`
       }
    }
 `;
-export default IdentificationStyle;
+export default AuthStyle;

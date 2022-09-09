@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import IdentificationStyle from "./styled-components/IdentificationStyle";
+import AuthStyle from "./styled-components/AuthStyle";
 
 export default function Login() {
    return (
-      <IdentificationStyle>
+      <AuthStyle>
          <h1>MyWallet</h1>
          <form>
             <input type="email" placeholder="E-mail" />
@@ -13,6 +13,6 @@ export default function Login() {
          <Link to="/register">
             <span>Primeira vez? Cadastre-se!</span>
          </Link>
-      </IdentificationStyle>
+      </AuthStyle>
    );
 }
