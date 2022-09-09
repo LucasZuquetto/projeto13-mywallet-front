@@ -3,7 +3,7 @@ import AuthStyle from "./styled-components/AuthStyle";
 
 export default function Login() {
    return (
-      <AuthStyle>
+      <AuthStyle height={'100vh'}>
          <h1>MyWallet</h1>
          <form>
             <input type="email" placeholder="E-mail" />

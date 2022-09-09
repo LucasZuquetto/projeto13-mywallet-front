@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const AuthStyle = styled.div`
    width: 100vw;
-   height: 100vh;
+   height: ${props => props.height};
    display: flex;
    flex-direction: column;
    align-items: center;

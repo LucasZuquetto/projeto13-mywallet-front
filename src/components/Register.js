@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Register() {
    return (
-      <AuthStyle>
+      <AuthStyle height={'100vh'}>
          <h1>MyWallet</h1>
          <form>
             <input type="text" placeholder="Nome" />

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const HomeContainer = styled.div`
    width: 100vw;
@@ -12,6 +12,9 @@ const HomeContainer = styled.div`
       width: 85vw;
       justify-content: space-between;
       margin-top: 12px;
+      a {
+         text-decoration: none;
+      }
    }
    div div {
       font-size: 25px;
@@ -31,8 +34,9 @@ const HomeContainer = styled.div`
    }
 `;
 const Header = styled.div`
+   width: 85vw;
    font-size: 26px;
-   margin-bottom: 15px;
+   margin-bottom: ${props => props.marginb};
    span {
       font-weight: 700;
       font-size: 26px;
@@ -47,6 +51,7 @@ const Content = styled.div`
    border-radius: 5px;
    display: flex;
    align-items: center;
+   justify-content: center;
    padding: 0 40px;
    text-align: center;
    p {
