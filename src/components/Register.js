@@ -23,10 +23,14 @@ export default function Register() {
       };
       try {
          await axios.post("http://localhost:5000/register", userRegister);
-         console.log('registered')
-         navigate('/')
+         console.log("registered");
+         navigate("/");
       } catch (error) {
-         console.log(error.message)
+         console.log(error.message);
+         setEmail('')
+         setName('')
+         setPassword('')
+         setPassword2('')
       }
    }
    return (
@@ -34,6 +38,7 @@ export default function Register() {
          <h1>MyWallet</h1>
          <form onSubmit={sendData}>
             <input
+               value={name}
                onChange={(e) => setName(e.target.value)}
                type="text"
                placeholder="Nome"
@@ -43,14 +48,15 @@ export default function Register() {
                onChange={(e) => setEmail(e.target.value)}
                type="email"
                placeholder="E-mail"
+               value={email}
                required
             />
             <input
+               value={password}
                onChange={(e) => setPassword(e.target.value)}
                type="password"
                placeholder="Senha"
                id="password"
-               value={password}
                required
             />
             <input

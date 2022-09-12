@@ -2,12 +2,15 @@ import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { BsBoxArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { HomeContainer, Header, Content } from "./styled-components/HomeStyle";
+import { useContext } from 'react';
+import userContext from '../userContext';
 
 export default function Home() {
+   const [profile,setProfile] = useContext(userContext)
    return (
       <HomeContainer>
          <Header marginb={'28px'}>
-            <span>Olá, (trocaaquihein)</span>
+            <span>Olá, {profile.name}</span>
             <BsBoxArrowRight />
          </Header>
          <Content>
@@ -20,7 +23,7 @@ export default function Home() {
                   <h3>Nova Entrada</h3>
                </div>
             </Link>
-            <Link to="/home/saida">
+            <Link to="/home/expense">
                <div>
                   <AiOutlineMinusCircle />
                   <h3>Nova Saída</h3>
