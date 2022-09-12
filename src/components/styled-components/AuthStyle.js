@@ -58,6 +58,10 @@ const AuthStyle = styled.div`
          font-size: 20px;
          border-radius: 5px;
       }
+      button:hover{
+         filter: contrast(85%);
+         cursor: pointer;
+      }
    }
 `;
 export default AuthStyle;

@@ -13,11 +13,11 @@ export default function App() {
          <IconContext.Provider value={{ color: "white" }}>
             <BrowserRouter>
                <Routes>
-                  <Route path="/login" element={<Login />} />
+                  <Route path="/" element={<Login />} />
                   <Route path="/register" element={<Register />} />
                   <Route path="/home" element={<Home />} />
                   <Route path='/home/income' element={<NewEnter/>} />
-                  <Route path='home/saida' element={<NewSaida />} />
+                  <Route path='/home/saida' element={<NewSaida />} />
                </Routes>
             </BrowserRouter>
          </IconContext.Provider>

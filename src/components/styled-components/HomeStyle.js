@@ -16,6 +16,10 @@ const HomeContainer = styled.div`
          text-decoration: none;
       }
    }
+   div div:hover {
+      filter: contrast(85%);
+      cursor: pointer;
+   }
    div div {
       font-size: 25px;
       background-color: #a328d6;
@@ -36,7 +40,7 @@ const HomeContainer = styled.div`
 const Header = styled.div`
    width: 85vw;
    font-size: 26px;
-   margin-bottom: ${props => props.marginb};
+   margin-bottom: ${(props) => props.marginb};
    span {
       font-weight: 700;
       font-size: 26px;
