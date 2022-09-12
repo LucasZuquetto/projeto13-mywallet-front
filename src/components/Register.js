@@ -14,6 +14,8 @@ export default function Register() {
       e.preventDefault();
       if (password !== password2) {
          alert("Sua senha não foi confirmada corretamente");
+         setPassword('')
+         setPassword2('')
          return;
       }
       const userRegister = {
@@ -69,7 +71,7 @@ export default function Register() {
             />
             <button type="submit">Cadastrar</button>
          </form>
-         <Link to="/login">
+         <Link to="/">
             <span>Já tem uma conta? Entre agora!</span>
          </Link>
       </AuthStyle>

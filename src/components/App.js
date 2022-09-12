@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, UNSAFE_RouteContext } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Register from "./Register";
 import Login from "./Login";
 import GlobalStyle from "./GlobalStyle";
