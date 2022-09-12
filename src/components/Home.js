@@ -1,18 +1,23 @@
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { BsBoxArrowRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
-import { HomeContainer, Header, AddTransaction} from "./styled-components/HomeStyle";
-import { useContext } from 'react';
-import userContext from '../userContext';
-import Transactions from './Transactions';
+import { Link, useNavigate } from "react-router-dom";
+import {
+   HomeContainer,
+   Header,
+   AddTransaction,
+} from "./styled-components/HomeStyle";
+import { useContext } from "react";
+import userContext from "../userContext";
+import Transactions from "./Transactions";
 
 export default function Home() {
-   const [profile] = useContext(userContext)
+   const [profile] = useContext(userContext);
+   let navigate = useNavigate();
    return (
       <HomeContainer>
-         <Header marginb={'28px'}>
+         <Header marginb={"28px"}>
             <span>Olá, {profile.name}</span>
-            <BsBoxArrowRight />
+            <BsBoxArrowRight onClick={() => navigate("/")} />
          </Header>
          <Transactions />
          <div>

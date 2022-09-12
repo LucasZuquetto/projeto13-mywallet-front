@@ -17,8 +17,8 @@ export default function Transactions() {
             {transactions.length === 0 ? (
                <p>Não há registros de entrada ou saída</p>
             ) : (
-               transactions.map((transaction) => (
-                  <div>
+               transactions.map((transaction, index) => (
+                  <div key={index}>
                      <div>
                         <span>{transaction.date}</span>
                         <h2>{transaction.description}</h2>
